@@ -1,0 +1,72 @@
+.pwd-list {
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  caret-color: transparent;
+  margin: 0 auto;
+}
+
+.pwd-list .input-wrap {
+  position: absolute;
+  width: 150%;
+  z-index: -1;
+  font-size: 1px;
+  border: none !important;
+  display: block;
+  top: 0;
+  left: -50%;
+  bottom: 0;
+  right: 0;
+  background: transparent;
+}
+
+.pwd-list .input-wrap .input-core {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: transparent;
+  color: transparent;
+  border: none;
+  outline: none;
+  caret-color: transparent;
+  opacity: 0;
+  word-spacing: -1px;
+}
+
+.pwd-list>li {
+  display: inline-block;
+  position: relative;
+  display: inline-block;
+  width: 55px;
+  height: 47px;
+  display: inline-block;
+  border-right: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  background: #FFFFFF;
+}
+
+.pwd-list>li:first-child {
+  border-left: 1px solid #ddd;
+}
+
+.pwd-list>li.active {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  border: #BEA473 1px solid !important;
+}
+
+.pwd-list>li .dot-core {
+  display: inline-block;
+  content: "";
+  width: 15px;
+  height: 15px;
+  background: #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  border-radius: 100%;
+  vertical-align: top;
+  caret-color: transparent;
+}
